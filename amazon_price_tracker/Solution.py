@@ -18,7 +18,6 @@
 # price_without_currency = price.split("$")[1]
 # price_as_float = float(price_without_currency)
 # print(price_as_float)
-# LINK https://gist.github.com/angelabauer/6b2d01cf2c265910ea8c03003244939f
 
 # STEP 2
 # import smtplib
@@ -39,4 +38,3 @@
 #             to_addrs=YOUR_EMAIL,
 #             msg=f"Subject:Amazon Price Alert!\n\n{message}\n{url}"
 #         )
-# LINK https://gist.github.com/angelabauer/c354128af8f132ac3be461afa4480e74
