@@ -2,7 +2,7 @@
 
 # Objective
 
-Follow a specific stock and track every day with beautiful soup from https://www.alphavantage.co/ then send sms messages to your phone number if the prices go up or down using twilio app
+Follow a specific stock and track it every day with beautiful soup from https://www.alphavantage.co/ then send sms messages to your phone number if the prices go up or down using twilio app
 
 The sms message should look something like this
 ```
