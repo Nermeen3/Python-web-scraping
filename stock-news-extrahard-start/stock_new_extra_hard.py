@@ -8,7 +8,7 @@ COMPANY_NAME = "Tesla Inc"
 
 ## STEP 1: Use https://www.alphavantage.co
 # When STOCK price increase/decreases by 5% between yesterday and the day before yesterday then print("Get News").
-alpha_api_key = "0FC5B5FORD836Y5H"
+alpha_api_key = "ABC"
 url = f"https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol={STOCK}&apikey={alpha_api_key}"
 response = requests.get(url)
 data = response.json()["Time Series (Daily)"]
@@ -30,7 +30,7 @@ for i in range(len(data_list)-2):
 
 # STEP 2: Use https://newsapi.org
 # Instead of printing ("Get News"), actually get the first 3 news pieces for the COMPANY_NAME.
-news_api_key = "40fff642e04d4b2189b5c693bf7432e3"
+news_api_key = "ABC"
 if big_increases:
     url = (f'https://newsapi.org/v2/everything?'
            f'q={COMPANY_NAME}&'
@@ -46,13 +46,13 @@ print(big_increases)
 
 ## STEP 3: Use https://www.twilio.com
 # Send a seperate message with the percentage change and each article's title and description to your phone number. 
-account_sid = "AC8d94d30af05d44101787ca272e41de56"
-auth_token = "416c08a8fd0b9991f2749587b890a9e0"
+account_sid = "ABC"
+auth_token = "ABC"
 client = Client(account_sid, auth_token)
 message = client.messages.create(
              body=f"TSLA: 🔺{big_increases[0][0]}%\nHeadline: {big_increases[0][1][0]}\nBrief: {big_increases[0][1][1]}",
-             from_='+19283707954',
-             to='+995558871331'  # 995593319561
+             from_='+11111111111',
+             to='+22222222222'
          )
 print(message.sid)
 
