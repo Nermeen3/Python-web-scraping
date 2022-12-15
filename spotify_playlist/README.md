@@ -9,7 +9,7 @@ The central idea behind this project is to be able to use BeautifulSoup to obtai
 
 ### ⚠️ Important: Use the Internet Archive's URL
 
-**use this link** and change the change to your birthday
+**use this link** and change the date to your birthday
 ```
 URL = "https://www.billboard.com/charts/hot-100/1996-01-01/"
 ```
