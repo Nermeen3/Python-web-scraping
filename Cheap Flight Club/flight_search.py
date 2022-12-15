@@ -4,7 +4,7 @@ import datetime as dt
 class FlightSearch:
     # This class is responsible for talking to the Flight Search API.
     def __init__(self):
-        self.api_key = "8YhXhVeBGTdC73t35gOC-o56WbhF7gTe"
+        self.api_key = "123"
         self.search_url = "https://api.tequila.kiwi.com/v2/search"
         self.headers = {
             'apikey': self.api_key,
